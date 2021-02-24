@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>personal site of jake jarrett</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        @media screen {
+            :root {
+                --generic-margin-horizontal: 10vw;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 1em;
+
+                background: #ffcccc;
+                color: #333333;
+                -webkit-font-smoothing: antialiased;
+                font-feature-settings: "liga"off;
+                overflow-x: hidden;
+                margin: 0 var(--generic-margin-horizontal);
+            }
+
+            h1,
+            h2 {
+                font-size: 2rem;
+                font-weight: normal;
+            }
+
+            ul,
+            ol {
+                list-style-position: inside;
+                padding-left: 0;
+                font-size: 1rem;
+            }
+
+            li ul,
+            li ol {
+                padding-left: 3ch;
+            }
+
+            li ol {
+                list-style-type: lower-alpha;
+            }
+
+            li li ol {
+                list-style-type: lower-roman;
+            }
+
+            a {
+                color: #333333;
+                text-decoration: none;
+                cursor: pointer;
+                padding: 10px;
+            }
+
+            a.inline-block {
+                display: inline-block;
+                font-size: 1rem;
+            }
+
+            a:hover,
+            a:focus {
+                background: white;
+                color: #111;
+                outline: none;
+            }
+
+            header {
+                margin: 2.5vh 0;
+                text-transform: lowercase;
+                color: #111;
+            }
+
+            header h1 {
+                margin: 0 0 30px 0;
+                font-size: 5rem;
+            }
+
+            header ul li {
+                margin: 0;
+                font-size: 2rem;
+                list-style-type: "> ";
+            }
+
+            section {
+                padding: 20px 10px;
+                border-radius: 10px;
+                margin: 0 0 40px 0;
+                background: rgba(255, 255, 255, 0.4);
+                box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.2);
+            }
+
+            section h2, section p {
+                margin:0;
+            }
+
+            section ol {
+                margin-bottom:0;
+            }
+
+            section section {
+                background: transparent;
+                padding: 0;
+                margin: 0;
+                margin-left: 20px;
+                box-shadow: none;
+            }
+
+            section p {
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin-left: 1rem;
+            }
+
+            footer {
+                font-size: 1rem;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 10px 10px 0 0;
+                margin-top: 40px;
+            }
+
+            footer p {
+                margin: 0;
+            }
+
+        }
+
+
+        @media screen and (max-width: 800px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            body {
+                font-size: 1.5em;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            body {
+                font-size: 2.0em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            body {
+                font-size: 2.5em;
+            }
+        }
+
+        @media print {
+            body {
+                font: 0.8em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+            header h1 {
+                margin-bottom: 0;
+            }
+
+            header p {
+                margin-top: 0;
+                font-size: 1.2em;
+            }
+
+            section {
+                page-break-before: auto;
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+
+            section ol a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            section ol a::after {
+                content: attr(href);
+                margin-left: 0.2em;
+                text-decoration: underline;
+            }
+
+            li ol {
+                list-style-type: lower-alpha;
+            }
+
+            li li ol {
+                list-style-type: lower-roman;
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+            h2+p {
+                margin-top: 0;
+                font-size: 0.8em;
+            }
+
+            .ref {
+                display: none;
+            }
+
+            .screen {
+                display: none;
+            }
+
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>@jakejarrett</h1>
+        <ul>
+            <li>open source</li>
+            <li>user experience</li>
+            <li>developer experience</li>
+            <li>gaming</li>
+            <li>music</li>
+        </ul>
+    </header>
+
+    <section id="social">
+        <h2>
+            <a class="ref" href="#socials">#</a>
+            Socials / Links
+        </h2>
+        <section>
+            <a target="_blank" rel="noopener" class="inline-block" href="https://github.com/jakejarrett">github.com/jakejarrett</a>
+            <a target="_blank" rel="noopener" class="inline-block" href="https://twitter.com/jakerjarrett">twitter.com/jakerjarrett</a>
+            <a target="_blank" rel="noopener" class="inline-block" href="https://domed.gg">domed.gg</a>
+        </section>
+    </section>
+
+    <section id="work">
+        <h2>
+            <a class="ref" href="#work">#</a>
+            Work / Experience
+        </h2>
+        <section>
+
+            <ol>
+                <li>Kolmeo; <b>March 2020 - undefined</b></li>
+                <li>PointsBet; <b>August 2018 - March 2020</b></li>
+                <li>Vokke; <b>October 2015 - July 2018</b></li>
+                <li>DenDelight; <b>May 2015 - June 2015</b></li>
+            </ol>
+        </section>
+    </section>
+
+    <section id="contributions">
+        <h2>
+            <a class="ref" href="#contributions">#</a>
+            Contributor to (current or former)...
+        </h2>
+        <section>
+            <ol>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/Soundmolto">Soundmolto</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/gtk-dev-tools">gtk-dev-tools</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/Maluen/Backbone-Debugger">Backbone Debugger</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/vincelwt/harmony">Harmony (Pre-closed source)</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/Soundnode/soundnode-app">Soundnode</a></li>
+            </ol>
+        </section>
+    </section>
+
+    <section id="written">
+        <h2>
+            <a class="ref" href="#written">#</a>
+            Things I've written...
+        </h2>
+        <section>
+            <ol>
+                <li>None, yet.</li>
+            </ol>
+            <a target="_blank" rel="noopener" class="inline-block" href="https://medium.com/@jakerjarrett">medium.com/@jakerjarrett</a>
+        </section>
+    </section>
+
+    <section id="talks">
+        <h2>
+            <a class="ref" href="#talks">#</a>
+            Talks I've given...
+        </h2>
+        <section>
+            <p>(These are all internal talks currently)</p>
+            <ol>
+                <li>frontend fireside - Kolmeo; <a target="inline-block" href="#todo">"CSS Variables & making your styling more versatile & maintainable"</a></li>
+                <li>frontend fireside - PointsBet; <a target="_blank" rel="noopener" class="inline-block" href="https://github.com/jakejarrett/pb-design-presentation/blob/master/decks/design.mdx">"Design Systems & how we can utilise them to enhance development"</a></li>
+            </ol>
+        </section>
+    </section>
+
+    <section id="working-on">
+        <h2>
+            <a class="ref" href="#code">#</a>
+            Things I'm working on...
+        </h2>
+        <section>
+            <ol>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://domed.gg">domed.gg</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/jakejarrett/soundnode-v2">soundnode-v2</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://medium.com/@jakerjarrett">blog posts</a></li>
+                <li><a target="_blank" rel="noopener" class="inline-block" href="https://github.com/jakejarrett/CustomBar">CustomBar</a></li>
+            </ol>
+        </section>
+    </section>
+
+    <footer>
+        <p>
+            Based on the amazing work from <a class="inline-block" href="https://github.com/jamiebuilds/jamie.build">@jamiebuilds</a>
+        </p>
+    </footer>
+</body>
+</body>
+
+</html>
