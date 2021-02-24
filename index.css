@@ -1,0 +1,220 @@
+@media screen {
+    :root {
+        --generic-margin-horizontal: 10vw;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1em;
+
+        background: #ffcccc;
+        color: #333333;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "liga"off;
+        overflow-x: hidden;
+        margin: 0 var(--generic-margin-horizontal);
+    }
+
+    h1,
+    h2 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    ul,
+    ol {
+        list-style-position: inside;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    li ul,
+    li ol {
+        padding-left: 3ch;
+    }
+
+    li ol {
+        list-style-type: lower-alpha;
+    }
+
+    li li ol {
+        list-style-type: lower-roman;
+    }
+
+    a {
+        color: #333333;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .inline-block {
+        display: inline-block;
+        font-size: 1rem;
+    }
+
+    li p.inline-block {
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .pad-10 {
+        padding: 10px;
+    }
+
+    a:hover,
+    a:focus {
+        background: white;
+        color: #111;
+        outline: none;
+    }
+
+    header {
+        margin: 2.5vh 0;
+        text-transform: lowercase;
+        color: #111;
+    }
+
+    header h1 {
+        margin: 0 0 30px 0;
+        font-size: 5rem;
+    }
+
+    header ul li {
+        margin: 0;
+        font-size: 2rem;
+        list-style-type: "> ";
+    }
+
+    section {
+        padding: 20px 10px;
+        border-radius: 10px;
+        margin: 0 0 40px 0;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.2);
+    }
+
+    section h2, section p {
+        margin:0;
+    }
+
+    section ol {
+        margin-bottom:0;
+    }
+
+    section section {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        box-shadow: none;
+    }
+
+    section p {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 10px 10px 0 0;
+        margin-top: 40px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 2.0em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 2.5em;
+    }
+}
+
+@media print {
+    body {
+        font: 0.8em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    header p {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+    section {
+        page-break-before: auto;
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    section ol a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    section ol a::after {
+        content: attr(href);
+        margin-left: 0.2em;
+        text-decoration: underline;
+    }
+
+    li ol {
+        list-style-type: lower-alpha;
+    }
+
+    li li ol {
+        list-style-type: lower-roman;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    h2+p {
+        margin-top: 0;
+        font-size: 0.8em;
+    }
+
+    .ref {
+        display: none;
+    }
+
+    .screen {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
